@@ -1,74 +1,113 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: index -->
+<html xml:lang="de" lang="de" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MyBBService</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="MyBBService.de"/>
+<meta name="publisher" content="MyBBService.de" />
+<meta name="copyright" content="MyBBService.de" />
+<meta name="description" content="MyBBService.de - Plugins, Themes und Support für MyBB" />
+<meta name="keywords" content="service, themes, plugins, mybb, support, mybbservice, logosektor, forum" />
+<meta http-equiv="content-language" content="de" />
+<meta name="robots" content="index, follow" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<link type="text/css" rel="stylesheet" href="stylesheets/global.css" />
+<link type="text/css" rel="stylesheet" href="stylesheets/mbcsmbmybbservice.css" />
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="MyBBService : " />
+<script type="text/javascript" src="jscripts/prototype.js?ver=1603"></script>
+<script type="text/javascript" src="jscripts/general.js?ver=1603"></script>
+<script type="text/javascript" src="jscripts/popup_menu.js?ver=1600"></script>
+<script type="text/javascript" src="jscripts/jquery.1.4.2.min.js"></script>
+<script type="text/javascript" src="jscripts/logosektor_scroller.js"></script>
+<script type="text/javascript" src="jscripts/mbjsmbmybbservice.js"></script>
+<script type="text/javascript">
+<!--
+jQuery.noConflict();
+	var cookieDomain = ".mybbservice.github.io";
+	var cookiePath = "/";
+	var cookiePrefix = "";
+	var deleteevent_confirm = "Möchtest Du dieses Ereignis wirklich löschen?";
+	var removeattach_confirm = "Möchtest du die ausgewählten Anhänge wirklich löschen?";
+	var loading_text = 'Lade.<br />Bitte warten...';
+	var saving_changes = 'Änderungen werden gespeichert ...';
+	var use_xmlhttprequest = "1";
+	var imagepath = "cleanwhite";
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+function over(elem) {
+    tds = elem.getElementsByTagName('td');
+    for(i=0;i<tds.length;i++) {
+        tds[i].style.background = '#E8E8E8';
+    }
+}
+function out(elem) {   
+    tds = elem.getElementsByTagName('td');
+    for(i=0;i<tds.length;i++) {
+        tds[i].style.background = '#F1F1F1';
+    }
+}
+jQuery(document).ready(function($) {
+// OPACITY OF BUTTON SET TO 50%
+$(".post_buttons img").css("opacity","0.3");
+ 
+// ON MOUSE OVER
+$(".post_buttons img").hover(function () {
+ 
+// SET OPACITY TO 100%
+$(this).stop().animate({
+opacity: 1.0
+}, "medium");
+},
+ 
+// ON MOUSE OUT
+function () {
+ 
+// SET OPACITY BACK TO 50%
+$(this).stop().animate({
+opacity: 0.3
+}, "medium");
+});
+});
 
-    <title>MyBBService</title>
-  </head>
+// -->
+</script>
 
-  <body>
+<script type="text/javascript">
+<!--
+	lang.no_new_posts = "Forum enthält keine neuen Beiträge";
+	lang.click_mark_read = "Klicke hier, um das Forum als gelesen zu markieren";
+// -->
+</script>
+</head>
+<body>
+<div id="container">
+<div id="header">
+			<div class="logo"><a href="http://mybbservice.github.io"><img src="cleanwhite/mybbslogoneu.png" alt="MyBBService" title="MyBBService" /></a></div>
+		</div>
+<a name="top" id="top"></a>
+<div style="background-image: url(headermenu/button_bg.png);
+background-repeat: repeat-x; width: 1024px; height: 38px; background-color: #757575;">
+<ul id="mbmybbserviceebul_table" class="mbmybbserviceebul_menulist css_menu" style="width: 1024px; height: 38px;">
+  <li class="topitem spaced_li first_button last_button" title="Startseite"><div class="buttonbg gradient_button gradient38" style="width: 80px;"><a href="http://mybbservice.github.io">Startseite</a></div></li>
+</ul>
+</div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/MyBBService">View on GitHub</a>
+<div id="content">
+Wir sind grad im Wartungsmodus.
+</div>
 
-          <h1 id="project_title">MyBBService</h1>
-          <h2 id="project_tagline"></h2>
+		<hr class="hidden" />
+			<div id="copyright">
+				<div id="debug"></div>
 
-        </header>
-    </div>
+Theme <strong>Clean White</strong> wurde erstellt von <a href="http://www.logosektor.de">logosektor</a> - Alle Rechte vorbehalten.
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<br class="clear" />
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<div id="back-to-top">Nach oben</div>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+		</div>
+		</div>
+	</body>
 </html>
