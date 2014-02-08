@@ -1,7 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: index -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xml:lang="de" lang="de" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>MyBBService</title>
+<title>MyBBService - Wartungsseite</title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="MyBBService.de"/>
 <meta name="publisher" content="MyBBService.de" />
@@ -15,88 +15,19 @@
 <link type="text/css" rel="stylesheet" href="stylesheets/global.css" />
 <link type="text/css" rel="stylesheet" href="stylesheets/mbcsmbmybbservice.css" />
 
-<script type="text/javascript" src="jscripts/prototype.js?ver=1603"></script>
-<script type="text/javascript" src="jscripts/general.js?ver=1603"></script>
-<script type="text/javascript" src="jscripts/popup_menu.js?ver=1600"></script>
-<script type="text/javascript" src="jscripts/jquery.1.4.2.min.js"></script>
-<script type="text/javascript" src="jscripts/logosektor_scroller.js"></script>
-<script type="text/javascript" src="jscripts/mbjsmbmybbservice.js"></script>
-<script type="text/javascript">
-<!--
-jQuery.noConflict();
-	var cookieDomain = ".mybbservice.github.io";
-	var cookiePath = "/";
-	var cookiePrefix = "";
-	var deleteevent_confirm = "Möchtest Du dieses Ereignis wirklich löschen?";
-	var removeattach_confirm = "Möchtest du die ausgewählten Anhänge wirklich löschen?";
-	var loading_text = 'Lade.<br />Bitte warten...';
-	var saving_changes = 'Änderungen werden gespeichert ...';
-	var use_xmlhttprequest = "1";
-	var imagepath = "cleanwhite";
-
-function over(elem) {
-    tds = elem.getElementsByTagName('td');
-    for(i=0;i<tds.length;i++) {
-        tds[i].style.background = '#E8E8E8';
-    }
-}
-function out(elem) {   
-    tds = elem.getElementsByTagName('td');
-    for(i=0;i<tds.length;i++) {
-        tds[i].style.background = '#F1F1F1';
-    }
-}
-jQuery(document).ready(function($) {
-// OPACITY OF BUTTON SET TO 50%
-$(".post_buttons img").css("opacity","0.3");
- 
-// ON MOUSE OVER
-$(".post_buttons img").hover(function () {
- 
-// SET OPACITY TO 100%
-$(this).stop().animate({
-opacity: 1.0
-}, "medium");
-},
- 
-// ON MOUSE OUT
-function () {
- 
-// SET OPACITY BACK TO 50%
-$(this).stop().animate({
-opacity: 0.3
-}, "medium");
-});
-});
-
-// -->
-</script>
-
-<script type="text/javascript">
-<!--
-	lang.no_new_posts = "Forum enthält keine neuen Beiträge";
-	lang.click_mark_read = "Klicke hier, um das Forum als gelesen zu markieren";
-// -->
-</script>
 </head>
 <body>
 <div id="container">
 <div id="header">
-			<div class="logo"><a href="http://mybbservice.github.io"><img src="cleanwhite/mybbslogoneu.png" alt="MyBBService" title="MyBBService" /></a></div>
+			<div class="logo"><a href="http://mybbservice.de"><img src="cleanwhite/mybbslogoneu.png" alt="MyBBService" title="MyBBService" /></a></div>
 		</div>
 <a name="top" id="top"></a>
-<div style="background-image: url(headermenu/button_bg.png);
-background-repeat: repeat-x; width: 1024px; height: 38px; background-color: #757575;">
-<ul id="mbmybbserviceebul_table" class="mbmybbserviceebul_menulist css_menu" style="width: 1024px; height: 38px;">
-  <li class="topitem spaced_li first_button" title="Startseite"><div class="buttonbg gradient_button gradient38" style="width: 80px;"><a href="http://mybbservice.github.io">Startseite</a></div></li>
-</ul>
-</div>
 
 <div id="content">
 <table border="0" cellspacing="0" cellpadding="4" class="tborder">
 <thead>
 <tr>
-<td colspan="2" class="thead">
+<td class="tcat">
 <strong>Wartungsmodus</strong>
 </td>
 </tr>
@@ -104,34 +35,14 @@ background-repeat: repeat-x; width: 1024px; height: 38px; background-color: #757
 <tbody>
 
 <tr>
-<td class="trow1">Wir sind momentan im Wartungsmodus. Bitte versuche es später erneut.</td>
+<td class="trow1">Aufgrund von schwerwiegenderen Server Problemen ist es uns momentan leider nicht möglich euch den gewohnten Support zukommen zu lassen. Wir sind in engem Kontakt mit dem Rechenzentrum, um das Problem so schnell wie möglich zu beheben und euch hier wieder frisch und munter begrüßen zu können.<br/>Bis dahin können wir leider nichts anderes zu tun, als die Daumen zu drücken. Bitte hab Verständniss dafür, wir würden uns auf jeden Fall freuen, dich später wieder hier begrüßen zu können.<br /><br />Kenny, Jones<br />Admins von MyBBService</td>
 </tr>
 
 </tbody>
 </table>
 </div>
 
-<br />
-			<div class="bottommenu">
-				<div class="float_right"></div>
-				<div>
-					<a href="/">MyBBService</a> | <a href="#top">Nach oben</a> | <a href="#content">Zum Inhalt</a>
-				</div>
-			</div>
-			</div>
+</div>
 
-		<hr class="hidden" />
-			<div id="copyright">
-				<div id="debug"></div>
-
-Theme <strong>Clean White</strong> wurde erstellt von <a href="http://www.logosektor.de">logosektor</a> - Alle Rechte vorbehalten.
-
-
-<br class="clear" />
-
-<div id="back-to-top">Nach oben</div>
-
-		</div>
-		</div>
 	</body>
 </html>
